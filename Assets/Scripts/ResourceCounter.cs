@@ -1,0 +1,45 @@
+using UnityEngine;
+using TMPro;
+
+public class ResourceCounter : MonoBehaviour
+{
+
+    public TextMeshProUGUI appleText;
+    public TextMeshProUGUI oreText;
+    public TextMeshProUGUI mushroomText;
+
+    private int apples;
+    private int ores;
+    private int mushrooms;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        UpdateUI();
+    }
+
+    // Update is called once per frame
+    private void UpdateUI()
+    {
+        appleText.text = "Apples: " + apples;
+        oreText.text = "Ores: " + ores;
+        mushroomText.text = "Mushrooms: " + mushrooms;
+    }
+
+    public void AddResource(string resourceName, int amount)
+    {
+        if (resourceName == "Apple")
+        {
+            apples += amount;
+        }
+        else if (resourceName == "Ore")
+        {
+            ores += amount;
+        }
+        else if (resourceName == "Mushroom")
+        {
+            mushrooms += amount;
+        }
+        UpdateUI();
+    }
+}
