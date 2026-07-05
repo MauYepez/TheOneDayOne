@@ -20,6 +20,8 @@ The primary goal in the current build is **resource gathering**.
 * Explore your surroundings to locate materials.
 * Use the interaction mechanics to harvest resources.
 
+future plans: make the towers interactable to collect special items.
+
 ## External Assets & Resources
 
 * **[Animations / (https://www.mixamo.com/)]**
